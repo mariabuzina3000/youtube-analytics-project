@@ -63,4 +63,3 @@ class Channel:
                         "viewCount": self.viewCount}
         with open(filename, 'w', encoding='utf-8') as file:
             json.dump(channel_info, file, indent=4, ensure_ascii=False)
-
