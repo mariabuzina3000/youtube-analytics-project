@@ -27,22 +27,22 @@ class Channel:
         return self.subscriberCount + other.subscriberCount
 
     def __sub__(self, other):
-        return self.subscriberCount - other.subscriberCount
+        return int(self.subscriberCount) - int(other.subscriberCount)
 
     def __sub__(self, other):
-        return other.subscriberCount - self.subscriberCount
+        return int(other.subscriberCount) - int(self.subscriberCount)
 
     def __gt__(self, other):
-        return self.subscriberCount > other.subscriberCount
+        return int(self.subscriberCount) > int(other.subscriberCount)
 
     def __ge__(self, other):
-        return self.subscriberCount >= other.subscriberCount
+        return int(self.subscriberCount) >= int(other.subscriberCount)
 
     def __lt__(self, other):
-        return self.subscriberCount < other.subscriberCount
+        return int(self.subscriberCount) < int(other.subscriberCount)
 
     def __le__(self, other):
-        return self.subscriberCount <= other.subscriberCount
+        return int(self.subscriberCount) <= int(other.subscriberCount)
 
     @classmethod
     def get_service(cls):
