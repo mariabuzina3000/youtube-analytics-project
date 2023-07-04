@@ -29,7 +29,7 @@ class Channel:
     def __sub__(self, other):
         return int(self.subscriberCount) - int(other.subscriberCount)
 
-    def __sub__(self, other):
+    def __rsub__(self, other):
         return int(other.subscriberCount) - int(self.subscriberCount)
 
     def __gt__(self, other):
